@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg" style="background:var(--dark-100)">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">KonoPlace</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex" role="search">
+            <span class="navbar-text text-white">
+              <a href=""><img src="./assets/icon-schedule.png" class="icon mx-4" alt="schedule"></a>
+              <a href=""><img src="./assets/icon-user.png" class="icon mx-5" alt="user profile"/></a>
+          </span>
+        </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid" style="height:100vh;">
+        <div class="d-grid gap-2 d-md-flex justify-content-center">
+          <a href="perfil.html" class="link me-md-2 p-3 mt-3">Perfil</a>
+          <a href="reserve.html" class="link me-md-2 p-3 mt-3" style="border-bottom: 2px solid var(--red);">Reservas</a>
+        </div> 
+        
+        <div class="d-flex align-items-center align-content-center mt-5" >
+                    <div class="card m-auto" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title" id="reserve_information">Mesa : #03</h5>
+                          <p class="card-text mt-1" id="date_reserve">15/05/2022</p>
+                          <p class="card-text" id="perifericos">Periféricos: seila carro</p>
+                          <a href="#" class="btn btn-green" style="width:100%;">Ver informações</a>
+                          <div class="d-flex mt-3">
+                            <a href="#" class="btn btn-info me-1"  style="width:50%;">Editar</a>    
+                            <a href="#" class="btn btn-danger"  style="width:50%;">Cancelar</a>    
+                          </div>
+                          
+                        </div>
+                      </div>
+                  </div>
+        </div>
+      </div>
+     
+
+      <footer class="navbar navbar-expand-lg text-white" style="background-color:var(--gray-50)">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="d-flex align-items-center p-1">
+                <li class="nav-item">
+                    <a class="nav-link active text-white mx-3" aria-current="page" href="#">KonoPlace + First tech</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white mx-3" href="#"><img src="https://img.icons8.com/fluency/30/undefined/instagram-new.png"/></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white mx-3" href="#"><img src="https://img.icons8.com/color/30/undefined/linkedin.png"/></a>
+                </li>
+                
+              </ul>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
