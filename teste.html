@@ -35,11 +35,14 @@
 
     <div class="container-fluid align-items-around" style="height:100vh;">
         <div class="d-grid gap-2 d-md-flex justify-content-around">
-            <form class="d-flex align-items-start flex-column mt-5 mx-0" action="">
-                <h6 class="text-white">Escolha a data de sua reserva</h6>
-                <input type="date" class="form-control" id="date_reservation">
-                <button type="submit" class="btn btn-danger mb-3 mt-3">Verificar disponibilidade</button>
-            </form>
+            <div class="d-flex align-items-start flex-column mt-5 mx-0" action="" name="formPlace">
+                <form action="" onsubmit="">
+                    <h6 class="text-white">Escolha a data de sua reserva</h6>
+                    <input type="date" class="form-control" id="date_reservation" name="fdate_reservation">
+                    <button type="submit" class="btn btn-danger mb-3 mt-3">Verificar disponibilidade</button>
+                </form>
+                
+            </div>
             <div class="d-flex flex-column align-items-center justify-content-center mx-3 p-1">
                 <div class="d-flex justify-content-start" style="width:100%;">
                     <div class="place place_empty mx-1"></div>
@@ -54,30 +57,33 @@
 
         <div class="d-flex flex-column justify-content-between align-items-center mb-2 mt-3 mx-auto"
             style="border:solid white 1px;min-height:60vh;max-width: 70%;">
+            
+
+            
             <div class="d-flex justify-content-between" style="width:100%;">
 
                 <div class="d-flex" style="width:100%;">
-
+                    
                     <div class="d-flex flex-column justify-content-evenly align-items-center"
                         style="border:solid white 2px;min-height:40vh;min-width:30%;">
                         <div class="d-flex flex-column justify-content-center p-1 align-items-center"
                             style="width: auto;">
-                            <div class="place place_empty">
+                            <div class="place place_empty" id="#01" data-bs-toggle="modal" data-bs-target="#modalReserva" value="01" onclick="getPlace(this)">
                                 <h3>a</h3>
                             </div>
                             <hr class="table-right" />
-                            <div class="place place_empty">
+                            <div class="place place_empty" id="#02"  data-bs-toggle="modal" data-bs-target="#modalReserva">
                                 <h3>a</h3>
                             </div>
                         </div>
                         <h6 class="text-white mt-1">Area de descompressão</h6>
                         <div class="d-flex flex-column justify-content-center p-1 align-items-center"
                             style="width: auto;">
-                            <div class="place place_empty">
+                            <div class="place place_empty" id="#03"  data-bs-toggle="modal" data-bs-target="#modalReserva">
                                 <h3>a</h3>
                             </div>
                             <hr class="table-right" />
-                            <div class="place place_empty">
+                            <div class="place place_empty" id="#04"  data-bs-toggle="modal" data-bs-target="#modalReserva">
                                 <h3>a</h3>
                             </div>
                         </div>
@@ -90,31 +96,31 @@
                             <div class="d-flex">
                                 <div class="d-flex flex-column justify-content-center  p-1 my-2 mx-2 align-items-center"
                                     style="width: auto;">
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#05" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                     <hr class="table-right" />
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#06" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center  p-1 my-2 mx-2 align-items-center"
                                     style="width: auto;">
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#07" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                     <hr class="table-right" />
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#08" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center  p-1 my-2 mx-2 align-items-center"
                                     style="width: auto;">
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#09" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                     <hr class="table-right" />
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#10" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                 </div>
@@ -124,31 +130,31 @@
 
                                 <div class="d-flex flex-column justify-content-center  p-1 my-2 mx-2 align-items-center"
                                     style="width: auto;">
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#11" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                     <hr class="table-right" />
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#12" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center  p-1 my-2 mx-2 align-items-center"
                                     style="width: auto;">
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#13" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                     <hr class="table-right" />
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#14" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center p-1 my-2 mx-2 align-items-center"
                                     style="width: auto;">
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#15" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                     <hr class="table-right" />
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#16" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                 </div>
@@ -158,21 +164,21 @@
 
                                 <div class="d-flex flex-column justify-content-center  p-1 my-2 mx-2 align-items-center"
                                     style="width: auto;">
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#17" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                     <hr class="table-right" />
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#18" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center  p-1 my-2 mx-2 align-items-center"
                                     style="width: auto;">
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#19" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                     <hr class="table-right" />
-                                    <div class="place place_empty">
+                                    <div class="place place_empty" id="#20" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                         <h3>a</h3>
                                     </div>
                                 </div>
@@ -193,25 +199,25 @@
                         style="border:solid blue 3px;max-height:100%;width:auto;">
                         <div class="d-flex">
                             <hr class="table-side " />
-                            <div class="place place_empty"></div>
+                            <div class="place place_empty" id="#21" data-bs-toggle="modal" data-bs-target="#modalReserva"></div>
                         </div>
 
 
                         <div class="d-flex mt-5">
                             <hr class="table-side" />
-                            <div class="place place_empty"></div>
+                            <div class="place place_empty" id="#22" data-bs-toggle="modal" data-bs-target="#modalReserva"></div>
                         </div>
                     </div>
 
                     <div class="d-flex flex-column p-5" style="width:100%;height:auto;">
                         <div class="d-flex ">
                             <hr class="table-side" />
-                            <div class="place place_empty"></div>
+                            <div class="place place_empty" id="#23" data-bs-toggle="modal" data-bs-target="#modalReserva"></div>
                         </div>
 
                         <div class="d-flex mt-5">
                             <hr class="table-side" />
-                            <div class="place place_empty"></div>
+                            <div class="place place_empty" id="#24" data-bs-toggle="modal" data-bs-target="#modalReserva"></div>
                         </div>
                     </div>
                 </div>
@@ -234,21 +240,21 @@
                         <div class="d-flex justify-content-center p-1 my-2 mx-2 align-items-center"
                             style="width: auto;">
                             <div class="d-flex flex-column align-items-center mx-1">
-                                <div class="place place_empty">
+                                <div class="place place_empty" id="#25" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                     <h3>a</h3>
                                 </div>
                                 <hr class="table-right" />
-                                <div class="place place_empty">
+                                <div class="place place_empty" id="#26" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                     <h3>a</h3>
                                 </div>
                             </div>
 
                             <div class="d-flex flex-column align-items-center mx-1">
-                                <div class="place place_empty">
+                                <div class="place place_empty" id="#27" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                     <h3>a</h3>
                                 </div>
                                 <hr class="table-right" />
-                                <div class="place place_empty">
+                                <div class="place place_empty" id="#28" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                     <h3>a</h3>
                                 </div>
                             </div>
@@ -257,22 +263,22 @@
 
                         <div class="d-flex justify-content-center p-1 my-2 mx-2 align-items-center"
                             style="width: auto;">
-                            <div class="d-flex flex-column align-items-center mx-1">
-                                <div class="place place_empty">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="place place_empty" id="#29" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                     <h3>a</h3>
                                 </div>
                                 <hr class="table-right" />
-                                <div class="place place_empty">
+                                <div class="place place_empty" id="#30" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                     <h3>a</h3>
                                 </div>
                             </div>
 
-                            <div class="d-flex flex-column align-items-center mx-1">
-                                <div class="place place_empty">
+                            <div class="d-flex flex-column align-items-center ">
+                                <div class="place place_empty" id="#31" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                     <h3>a</h3>
                                 </div>
                                 <hr class="table-right" />
-                                <div class="place place_empty">
+                                <div class="place place_empty" id="#32" data-bs-toggle="modal" data-bs-target="#modalReserva">
                                     <h3>a</h3>
                                 </div>
                             </div>
@@ -287,7 +293,7 @@
                         style="border:solid #FF7B01 3px;min-height:20vh;width:20%;">
                         <div class="d-flex justify-content-around p-3">
                             <hr class="table-side" />
-                            <div class="place place_empty"></div>
+                            <div class="place place_empty" id="#33" data-bs-toggle="modal" data-bs-target="#modalReserva"></div>
                         </div>
                     </div>
                 </div>
@@ -295,6 +301,35 @@
         </div>
 
 
+        
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mt-5" >
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modalReserva" tabindex="-1"  aria-labelledby="modalInfo" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalInfo"> Deseja agendar mesa </h5>
+          <button id="btnCloseIcon" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="cleanModal()"></button>
+        </div>
+        <h6 id="place_data">
+
+        </h6>
+        <h6 class="modal-body m-0" id="place_info">
+          
+        </h6>
+        <div class="modal-footer d-flex justify-content-center">
+            <button type="submit" class="btn btn-green" style="width:50%;">Save changes</button>
+            <button type="button" id="btnClose" class="btn btn-info" data-bs-dismiss="modal" onclick="cleanModal()" style="width:40%;">Fechar</button>
+        </div>
+
+    </form>
+      </div>
+    </div>
+  </div>
     </div>
 
 
@@ -306,9 +341,10 @@
 
 
 
-
-
-
+   
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="place.js"></script>
 </body>
 
 </html>

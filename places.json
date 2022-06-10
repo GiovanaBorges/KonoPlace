@@ -1,0 +1,16 @@
+
+[
+    {
+        "#01":{
+            "periféricos": ["pao", "água", "tomada"]            
+        },
+        "02":{
+            "periféricos": ["pao", "água"]
+        },
+        "#03":{
+            "periféricos": []
+        }
+    }
+]
+    
+
