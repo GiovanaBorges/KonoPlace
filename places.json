@@ -1,13 +1,16 @@
 
 [
     {
-        "#01":{
+        "place01":{
+            "name" : "#01",
             "periféricos": ["pao", "água", "tomada"]            
         },
-        "02":{
+        "place02":{
+            "name" : "#02",
             "periféricos": ["pao", "água"]
         },
-        "#03":{
+        "place03":{
+            "name" : "#03",
             "periféricos": []
         }
     }

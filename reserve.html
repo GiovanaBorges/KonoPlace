@@ -11,22 +11,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css.css">
+    <link rel="shortcut icon" href="./assets/orange-logo.png" type="image/x-icon">
 </head>
 <body>
-      <nav class="navbar navbar-expand-lg" style="background:var(--dark-100)">
-        <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">KonoPlace</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg" style="background:var(--dark-100)">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#"><img src="./assets/text-logo-test.png" alt="" style="width:150px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="d-flex" role="search">
+        </button>
+        <div class="d-flex" role="search">
             <span class="navbar-text text-white">
-              <a href=""><img src="./assets/icon-schedule.png" class="icon mx-4" alt="schedule"></a>
-              <a href=""><img src="./assets/icon-user.png" class="icon mx-5" alt="user profile"/></a>
-          </span>
+                <a href="test.html"><img src="./assets/icon-schedule.png" class="icon mx-4" alt="schedule"></a>
+                <a href="perfil.html"><img src="./assets/icon-user.png" class="icon mx-5" alt="user profile" /></a> </span>
         </div>
-        </div>
-      </nav>
+    </div>
+</nav>
 
       <div class="container-fluid" style="height:100vh;">
         <div class="d-grid gap-2 d-md-flex justify-content-center">
@@ -42,8 +43,8 @@
                           <p class="card-text" id="perifericos">Periféricos: seila carro</p>
                           <a href="#" class="btn btn-green" style="width:100%;">Ver informações</a>
                           <div class="d-flex mt-3">
-                            <a href="#" class="btn btn-info me-1"  style="width:50%;">Editar</a>    
-                            <a href="#" class="btn btn-danger"  style="width:50%;">Cancelar</a>    
+                            <a href="#"  data-bs-toggle="modal" data-bs-target="#modalEditReserva" class="btn btn-info me-1"  style="width:50%;">Editar</a>    
+                            <a href="#"  data-bs-toggle="modal" data-bs-target="#modalDeleteReserva"  class="btn btn-danger" style="width:50%;">Cancelar</a>    
                           </div>
                           
                         </div>
@@ -65,15 +66,68 @@
                     <a class="nav-link active text-white mx-3" aria-current="page" href="#">KonoPlace + First tech</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white mx-3" href="#"><img src="https://img.icons8.com/fluency/30/undefined/instagram-new.png"/></a>
+                  <a href="https://www.instagram.com/firsttechbr/" target=_blank class="nav-link text-white mx-3" href="#"><img src="https://img.icons8.com/fluency/30/undefined/instagram-new.png"/></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white mx-3" href="#"><img src="https://img.icons8.com/color/30/undefined/linkedin.png"/></a>
+                  <a href="https://www.linkedin.com/company/first-tech/mycompany/" target=_blank class="nav-link text-white mx-3"><img src="https://img.icons8.com/color/30/undefined/linkedin.png"/></a>
                 </li>
                 
               </ul>
           </div>
         </div>
     </footer>
+
+     <!-- Modal -->
+  <div class="modal fade" id="modalEditReserva" tabindex="-1"  aria-labelledby="modalInfo" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalInfo"> Deseja Editar sua reserva</h5>
+          <button id="btnCloseIcon" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="cleanModal()"></button>
+        </div>
+        <h6 id="place_data">
+
+        </h6>
+        <h6 class="modal-body m-0" id="place_info">
+          
+        </h6>
+        <div class="modal-footer d-flex justify-content-center">
+            <button type="submit" class="btn btn-green" style="width:50%;">Save changes</button>
+            <button type="button" id="btnClose" class="btn btn-info" data-bs-dismiss="modal" onclick="cleanModal()" style="width:40%;">Fechar</button>
+        </div>
+
+    </form>
+      </div>
+    </div>
+  </div>
+
+
+
+        
+<!-- Modal -->
+<div class="modal fade" id="modalDeleteReserva" tabindex="-1"  aria-labelledby="modalInfo" data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalInfo"> Deseja Deletar sua reserva</h5>
+        <button id="btnCloseIcon" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="cleanModal()"></button>
+      </div>
+      <h6 id="place_data">
+        Reserva : 01/05/123123213
+      </h6>
+      <h6 class="modal-body m-0" id="place_info">
+        
+      </h6>
+      <div class="modal-footer d-flex justify-content-center">
+          <button type="submit" class="btn btn-green" style="width:50%;">Sim</button>
+          <button type="button" id="btnClose" class="btn btn-info" data-bs-dismiss="modal" onclick="cleanModal()" style="width:40%;">Cancelar</button>
+      </div>
+
+  </form>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
