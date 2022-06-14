@@ -6,7 +6,7 @@ var myInit = { method: 'GET',
 
 function gato(){
     const result = "https:viacep.com.br/ws/01001000/json/?callback=meu_callback";
-    console.log(result)
+    
 }
 
 async function place(){

@@ -26,14 +26,14 @@ li{
 
 a{
     text-decoration: none;
-    color:white;
+    color:var(--white);
     transition:0.5s;
     opacity: 0.8;
 }
 
 a:hover{
     opacity: 1;
-    color:white;
+    color:var(--white);
 }
 
 
@@ -48,7 +48,7 @@ a:hover{
     transition: 0.5s;
     opacity: 0.8;
 
-    color:white;
+    color:var(--white);
 }
 
 .form-control:hover{
@@ -62,7 +62,7 @@ a:hover{
     border:0;
     opacity: 1;
 
-    color:white;
+    color:var(--white);
 }
 
 .btn-primary{
@@ -86,7 +86,7 @@ a:hover{
 
 .card-body{
     background-color: var(--gray-50);
-    color:white;
+    color:var(--white);;
     
     
 }
@@ -103,23 +103,23 @@ a:hover{
 
 .btn-green{
     background-color: var(--green);
-    color:white;
+    color:var(--white);;
 }
 
 .btn-danger{
     background-color: #961227;
-    color:white;
+    color:var(--white);;
 }
 
 .btn-info{
     background-color: #7768CF;
-    color:white;
+    color:var(--white);;
     border:#7768CF solid 1px;
 }
 
 .btn-info:hover{
     background-color: #7768CF;
-    color:white;
+    color:var(--white);;
     border:#7768CF solid 1px;
 }
 
@@ -141,12 +141,12 @@ a:hover{
 }
 
 .table-side{
-    background-color: white;
+    background-color:var(--white);
     padding:0.3rem;
 }
 
 .table-right{
-    background-color: white;
+    background-color:var(--white);
     padding:0.3rem;
 
     width: 65.84px;
@@ -158,4 +158,9 @@ a:hover{
 
     width: 65.84px;
     height: 7.15px;
+}
+
+.main-content{
+    background-color: var(--bg-dark);
+    
 }
