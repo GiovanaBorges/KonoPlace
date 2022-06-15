@@ -1,18 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding:0;
     border:0;
     margin:0;
-    font-family: "Poppins",sans-serif;
+    font-family: "Montserrat",sans-serif;
 }
 
 :root{
-    --white:#FFFFFF;
+    --white-text:#000000 /*#FFFFFF*/;
     --dark-100:#1C1C1C;
-    --bg-dark:#0D0D0D;
-    --gray-50:#262626;
+    --bg-dark:#DCD8D8;/*#0D0D0D;*/
+    --gray-50:#DCD8D8; /*#262626*/;
     --gray-30:#302C2C;
-    --red:#ff8c00;
-    --green:#14760B;
+    --orange:#F97A2D;
+    --red:#FF5A58;
+    --blue:#00A4D9;
+    --green:#05FF00;
+
+    --black-text:#000000;
+    --dark-100:#DCD8D8;
+    --bg-white: #DCD8D8;
+    --gray-50:#DCD8D8; /*#262626*/;
+    --gray-30:#302C2C;
 }
 
 body{
@@ -26,14 +36,14 @@ li{
 
 a{
     text-decoration: none;
-    color:var(--white);
+    color:var(--white-text);
     transition:0.5s;
     opacity: 0.8;
 }
 
 a:hover{
     opacity: 1;
-    color:var(--white);
+    color:var(--white-text);
 }
 
 
@@ -48,7 +58,7 @@ a:hover{
     transition: 0.5s;
     opacity: 0.8;
 
-    color:var(--white);
+    color:var(--white-text);
 }
 
 .form-control:hover{
@@ -62,14 +72,14 @@ a:hover{
     border:0;
     opacity: 1;
 
-    color:var(--white);
+    color:var(--white-text);
 }
 
 .btn-primary{
     background-color: var(--dark-100);
     border:0;
     width:100%;
-    color:var(--red);
+    color:var(--orange);
     opacity: 0.9;
     transition: 0.5s;
 
@@ -80,13 +90,13 @@ a:hover{
     background-color: var(--gray-30);
     border:0;
     opacity: 1;
-    color:var(--red);
+    color:var(--orange);
 }
 
 
 .card-body{
     background-color: var(--gray-50);
-    color:var(--white);;
+    color:var(--white-text);
     
     
 }
@@ -98,29 +108,29 @@ a:hover{
 }
 
 .link:hover{
-    border-bottom: 2px solid var(--red);
+    border-bottom: 2px solid var(--orange);
 }
 
 .btn-green{
     background-color: var(--green);
-    color:var(--white);;
+    color:var(--white-text);
 }
 
 .btn-danger{
-    background-color: #961227;
-    color:var(--white);;
+    background-color: var(--red);
+    color:var(--white-text);
 }
 
 .btn-info{
-    background-color: #7768CF;
-    color:var(--white);;
-    border:#7768CF solid 1px;
+    background-color: var(--blue);
+    color:var(--white-text);
+    border:var(--blue) solid 1px;
 }
 
 .btn-info:hover{
-    background-color: #7768CF;
-    color:var(--white);;
-    border:#7768CF solid 1px;
+    background-color: var(--blue);
+    color:var(--white-text);
+    border:var(--blue) solid 1px;
 }
 
 .place{       
@@ -133,20 +143,20 @@ a:hover{
 }
 
 .place_empty{
-    background-color: #05FF00; 
+    background-color: var(--green); 
 }
 
 .place_kono{
-    background-color: red;
+    background-color: var(--orange);
 }
 
 .table-side{
-    background-color:var(--white);
+    background-color:var(--white-text);
     padding:0.3rem;
 }
 
 .table-right{
-    background-color:var(--white);
+    background-color:var(--white-text);
     padding:0.3rem;
 
     width: 65.84px;

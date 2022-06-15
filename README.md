@@ -6,8 +6,6 @@ KonoPlace é uma plataforma de reserva de lugares do escritório da First tech .
 
 A quantidade de mesas nos escritórios é desigual a quantidade de funcionários da First tech . O Konoplace oferece uma solução de plataforma online onde é possível reservar seu lugar , evitando assim que o escritório fique cheio ou que pessoas não tenham lugar para ficar.
 
-### Solução do problema
-
 ### Rotas
 
 Rotas para o Usuário
@@ -30,9 +28,7 @@ POST "/place" Registrar mesa
 PUT "/place:id_place" Editar informação sobre mesa
 DELETE
 
-### Modelagem banco
-
-### Telas disponíveis :
+### Modelagem banco:
 
 tabela usuário:
 idUsuario
@@ -46,11 +42,38 @@ fk mesa
 tabela mesa:
 idMesa
 
+### Telas disponíveis :
+link do protótipo no figma
+
+
 ### Paleta de cores ? , fontes , protótipo
 
 Fonte : Poppins
+
 Paleta de cores :
+    white:#FFFFFF // cor letra
+    dark-100:#1C1C1C; // cor alternativa fundo
+    bg-dark:#0D0D0D; // cor de fundo
+    gray-50:#262626; // cor letra
+    gray-30:#302C2C; // cor letra 
+    red:#ff8c00; // cor buttons
+    green:#14760B; // cor buttons
 
 ### Tecnologias usadas :
+Frontend:
+Html
+Css
+Javascript
+Bootstrap
+
+Backend:
+Java
+Spring boot
+Mysql
+Spring validator
+Spring 
+Spring security
 
 ### features futuras
+
+Futuras atualizações do projeto
