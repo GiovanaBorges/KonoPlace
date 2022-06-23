@@ -8,23 +8,16 @@
 }
 
 :root{
-<<<<<<< HEAD
     --bg:white /*#FFFFFF*/;
     --text:black;
     --dark-100:#DCD8D8;
     
-=======
-    --white-text:#000000 /*#FFFFFF*/;
-    --dark-100:#1C1C1C;
-    --bg-dark:#DCD8D8;/*#0D0D0D;*/
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
     --gray-50:#DCD8D8; /*#262626*/;
     --gray-30:#302C2C;
     --orange:#F97A2D;
     --red:#FF5A58;
     --blue:#00A4D9;
     --green:#05FF00;
-<<<<<<< HEAD
 }
 
 .text-white{
@@ -34,18 +27,6 @@
 body{
     background-color: var(--bg);
     color:var(--text);
-=======
-
-    --black-text:#000000;
-    --dark-100:#DCD8D8;
-    --bg-white: #DCD8D8;
-    --gray-50:#DCD8D8; /*#262626*/;
-    --gray-30:#302C2C;
-}
-
-body{
-    background-color: var(--bg-dark);
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
 }
 
 
@@ -55,22 +36,14 @@ li{
 
 a{
     text-decoration: none;
-<<<<<<< HEAD
     color:var(--text);
-=======
-    color:var(--white-text);
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
     transition:0.5s;
     opacity: 0.8;
 }
 
 a:hover{
     opacity: 1;
-<<<<<<< HEAD
     color:var(--text);
-=======
-    color:var(--white-text);
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
 }
 
 
@@ -85,11 +58,7 @@ a:hover{
     transition: 0.5s;
     opacity: 0.8;
 
-<<<<<<< HEAD
     color:var(--text);
-=======
-    color:var(--white-text);
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
 }
 
 .form-control:hover{
@@ -103,11 +72,7 @@ a:hover{
     border:0;
     opacity: 1;
 
-<<<<<<< HEAD
     color:var(--text);
-=======
-    color:var(--white-text);
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
 }
 
 .btn-primary{
@@ -131,11 +96,7 @@ a:hover{
 
 .card-body{
     background-color: var(--gray-50);
-<<<<<<< HEAD
     color:var(--text);
-=======
-    color:var(--white-text);
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
     
     
 }
@@ -152,39 +113,23 @@ a:hover{
 
 .btn-green{
     background-color: var(--green);
-<<<<<<< HEAD
     color:var(--text);
-=======
-    color:var(--white-text);
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
 }
 
 .btn-danger{
     background-color: var(--red);
-<<<<<<< HEAD
     color:var(--text);
-=======
-    color:var(--white-text);
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
 }
 
 .btn-info{
     background-color: var(--blue);
-<<<<<<< HEAD
     color:var(--text);
-=======
-    color:var(--white-text);
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
     border:var(--blue) solid 1px;
 }
 
 .btn-info:hover{
     background-color: var(--blue);
-<<<<<<< HEAD
     color:var(--text);
-=======
-    color:var(--white-text);
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
     border:var(--blue) solid 1px;
 }
 
@@ -206,20 +151,12 @@ a:hover{
 }
 
 .table-side{
-<<<<<<< HEAD
     background-color:var(--text);
-=======
-    background-color:var(--white-text);
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
     padding:0.3rem;
 }
 
 .table-right{
-<<<<<<< HEAD
     background-color:var(--text);
-=======
-    background-color:var(--white-text);
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
     padding:0.3rem;
 
     width: 65.84px;
@@ -236,11 +173,8 @@ a:hover{
 .main-content{
     background-color: var(--bg-dark);
     
-<<<<<<< HEAD
 }
 
 img:hover{
     cursor: pointer;
-=======
->>>>>>> 1fc97c4593f49b6fa49dabaa031cefabef95cd8c
 }
