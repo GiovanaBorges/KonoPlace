@@ -3,8 +3,7 @@ function sun(){
     document.querySelector(":root").style.setProperty("--bg" , "white")
     document.querySelector(":root").style.setProperty("--text" , "black")
     document.querySelector(":root").style.setProperty("--gray-50" , "#DCD8D8")
-    document.querySelector(":root").style.setProperty("--dark-100" , "#DCD8D8")
-    
+    document.querySelector(":root").style.setProperty("--dark-100" , "#DCD8D8")   
 }
 
 function moon(){
