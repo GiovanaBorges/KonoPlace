@@ -43,7 +43,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid align-items-around" style="height:100vh;">
+    <div class="container-fluid align-items-center p-0 m-0" style="height:100vh;">
         <div class="d-grid gap-2 d-md-flex justify-content-around">
             <div class="d-flex align-items-start flex-column mt-5 mx-0" action="" name="formPlace">
                 <form action="" onsubmit="">
@@ -66,7 +66,7 @@
         </div>
 
         <div class="d-flex flex-column justify-content-between align-items-center mb-2 mt-3 mx-auto"
-            style="border:solid white 1px;min-height:60vh;max-width: 70%;">
+            style="border:solid  1px;min-height:60vh;max-width: 70%;">
             
 
             
@@ -75,7 +75,7 @@
                 <div class="d-flex" style="width:100%;">
                     
                     <div class="d-flex flex-column justify-content-evenly align-items-center"
-                        style="border:solid white 2px;min-height:40vh;min-width:30%;">
+                        style="border:solid  2px;min-height:40vh;min-width:30%;">
                         <div class="d-flex flex-column justify-content-center p-1 align-items-center"
                             style="width: auto;">
                             <div class="place place_empty" id="#01" data-bs-toggle="modal" data-bs-target="#modalReserva" value="01" onclick="getPlace(this)">
@@ -169,7 +169,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h6 class="text-center text-white mt-1">Escritório</h6>
+                            <h6 class="text-center  mt-1">Escritório</h6>
                             <div class="d-flex justify-content-end">
 
                                 <div class="d-flex flex-column justify-content-center  p-1 my-2 mx-2 align-items-center"
@@ -240,8 +240,8 @@
 
                 <div class="d-flex justify-content-between align-content-between align-items-end">
                     <div class="d-flex flex-column justify-content-center align-items-end"
-                        style="border:solid white 2px;min-height:20vh;width:50%;">
-                        <h5 class="text-white mx-1">Sala tesla</h5>
+                        style="border:solid 2px;min-height:20vh;width:50%;">
+                        <h5 class=" mx-1">Sala tesla</h5>
                     </div>
 
 
@@ -250,23 +250,13 @@
                         <div class="d-flex justify-content-center p-1 my-2 mx-2 align-items-center"
                             style="width: auto;">
                             <div class="d-flex flex-column align-items-center mx-1">
-                                <div class="place place_empty" id="#25" data-bs-toggle="modal" data-bs-target="#modalReserva">
-                                    <h3>a</h3>
-                                </div>
-                                <hr class="table-right" />
-                                <div class="place place_empty" id="#26" data-bs-toggle="modal" data-bs-target="#modalReserva">
-                                    <h3>a</h3>
-                                </div>
+                               
                             </div>
 
                             <div class="d-flex flex-column align-items-center mx-1">
-                                <div class="place place_empty" id="#27" data-bs-toggle="modal" data-bs-target="#modalReserva">
-                                    <h3>a</h3>
-                                </div>
-                                <hr class="table-right" />
-                                <div class="place place_empty" id="#28" data-bs-toggle="modal" data-bs-target="#modalReserva">
-                                    <h3>a</h3>
-                                </div>
+                                
+                                
+                                
                             </div>
 
                         </div>
@@ -284,13 +274,7 @@
                             </div>
 
                             <div class="d-flex flex-column align-items-center ">
-                                <div class="place place_empty" id="#31" data-bs-toggle="modal" data-bs-target="#modalReserva">
-                                    <h3>a</h3>
-                                </div>
-                                <hr class="table-right" />
-                                <div class="place place_empty" id="#32" data-bs-toggle="modal" data-bs-target="#modalReserva">
-                                    <h3>a</h3>
-                                </div>
+                                
                             </div>
 
                         </div>
@@ -330,7 +314,7 @@
           
         </h6>
         <div class="modal-footer d-flex justify-content-center">
-            <button type="submit" class="btn btn-green" style="width:50%;">Reservar</button>
+            <button type="submit" class="btn btn-green" style="width:50%;">Save changes</button>
             <button type="button" id="btnClose" class="btn btn-info" data-bs-dismiss="modal" onclick="cleanModal()" style="width:40%;">Fechar</button>
         </div>
 
@@ -343,23 +327,23 @@
   </div>
 
 
-  <footer class="navbar navbar-expand-lg text-white w-auto p-auto m-0" style="background-color:var(--dark-100)">
-    <div class="container-fluid">
+  <footer class="navbar navbar-expand-lg w-100 p-0 m-0" style="background-color:var(--gray-50) ;" >
+    <div class="container-fluid" >
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
         <div>
-          <img width="150" height="60" src="./assets/cropped-img-logo-FT.png" class="attachment-full size-full" alt="" >
+          <img width="150" height="60" src="./assets/cropped-img-logo-FT.png" class="attachment-full size-full" alt="" sizes="(max-width: 350px) 100vw, 350px">
         </div>
-        <ul class="d-flex align-items-center justify-content-center p-1" >
+        <ul class="d-flex align-items-center justify-content-center my-auto" >
           
-          <li class="d-flex align-items-center justify-content-center p-2">
+          <li class="d-flex align-items-center justify-content-center">
 
           
           <li class="nav-item">
-                <a class="nav-link active text-white mx-3" aria-current="page" href="#">KonoPlace + First tech</a>
+                <a class="nav-link active mx-3" aria-current="page" href="#">KonoPlace + First tech</a>
             </li>
             <li class="nav-item">
               <a href="https://www.instagram.com/firsttechbr/" target=_blank class="nav-link text-white mx-3" href="#"><img src="https://img.icons8.com/fluency/30/undefined/instagram-new.png"/></a>
@@ -379,6 +363,7 @@
 
 <!-- JavaScript Bundle with Popper -->
 <script src="./js/trocarcordefundo.js"></script>
+<script src="./js/js.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="place.js"></script>
 </body>
