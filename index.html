@@ -21,9 +21,7 @@
       <a class="navbar-brand " href="#"><img src="./assets/text-logo-test.png" alt="" style="width:150px"></a>
       <div class="d-flex" role="search">
         <span class="navbar-text ">
-          <img id="moon" onclick="moon()" src="https://img.icons8.com/ios-glyphs/30/000000/moon-symbol.png" class= "icon mx-3" alt= "dark"/></a>
-          <img id="sun" onclick="sun()" src="https://img.icons8.com/material-outlined/24/000000/sun--v1.png"class= "icon mx-3" alt="logout" /></a>
-          
+          <img id="element"   src="https://img.icons8.com/ios-glyphs/30/white/moon-symbol.png"class= "icon mx-3" alt="logout" />
     </div>
 
     </div>
@@ -39,28 +37,28 @@
                     </div>
                   
                     <div class="col ">
-                        <form class="m-5">
+                        <form class="m-5" onsubmit="validarcadastro()">
                             <h1 class="mb-3">Cadastro</h1>
                             <div class="mb-3">
-                              <input id="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome Completo">
+                              <input id="name" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Nome Completo">
                             </div>
                             <div class="mb-3">
-                                <input id="Cargo" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cargo">
+                                <input id="cargo" type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Cargo">
                               </div>
                             <div class="mb-3">
-                              <input id="Departamento" type="text" class="form-control" id="exampleInputPassword1" placeholder="Departamento">
+                              <input id="departamento" type="text" class="form-control"  placeholder="Departamento">
                             </div>
                             <div class="mb-3">
-                                <input id="Telefone" type="text" class="form-control" id="exampleInputPassword1" placeholder="Telefone">
+                                <input id="phone" type="text" class="form-control" placeholder="Telefone">
                               </div>
                               <div class="mb-3">
-                                <input id="email" type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                                <input id="email" type="email" class="form-control" placeholder="Email">
                               </div>
                               <div class="mb-3">
-                                <input id="pass" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <input id="pass" type="password" class="form-control" placeholder="Senha">
                               </div>
                               <div class="mb-3">
-                                <input id="pass-confirm" type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                                <input id="pass-confirm" type="password" class="form-control" placeholder="Confirmar Senha">
                               </div>
                               
                               <div class="mb-3 d-flex justify-content-end" >
@@ -83,8 +81,8 @@
     </div>
 
   </div>
-  <footer class="navbar navbar-expand-lg w-100 p-0 m-0" style="background-color:var(--gray-50) ;" >
-    <div class="container-fluid" >
+  <footer class="navbar navbar-expand-lg text-white" style="background-color:var(--dark-100)">
+    <div class="container-fluid">
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -93,9 +91,9 @@
         <div>
           <img width="150" height="60" src="./assets/cropped-img-logo-FT.png" class="attachment-full size-full" alt="" sizes="(max-width: 350px) 100vw, 350px">
         </div>
-        <ul class="d-flex align-items-center justify-content-center my-auto" >
+        <ul class="d-flex align-items-center justify-content-center p-1" >
           
-          <li class="d-flex align-items-center justify-content-center">
+          <li class="d-flex align-items-center justify-content-center p-2">
 
           
           <li class="nav-item">
@@ -121,6 +119,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+    <script src="./js/js.js"></script>
 
 </body>
 

@@ -1,16 +1,52 @@
-var myHeaders = new Headers();
+function validar(){
+    const name = document.getElementById("name").value
+    const email = document.getElementById("email").value
+    const cargo = document.getElementById("job").value
+    const departamento = document.getElementById("departamento").value
+    const telefone = document.getElementById("phone").value
+    const senha = document.getElementById("pass").value
 
-var myInit = { method: 'GET',
-               headers: myHeaders,cache: 'default' };
-
-
-function gato(){
-    const result = "https:viacep.com.br/ws/01001000/json/?callback=meu_callback";
     
+    
+    if(email === "" || email === null ||
+     name === "" || name=== null ||
+      cargo === "" || cargo=== null 
+      || departamento === "" 
+    || departamento=== null ||
+     telefone === "" || telefone=== null 
+     || senha === "" || senha === null
+    ){
+        alert("Não pode haver espaços vazios")
+    }
+
 }
 
-async function place(){
-    const data = "./places.json"
-    const result = data.map(resp=>console.log(resp))
-    console.log(result)
+function validarcadastro(){ 
+    const name = document.getElementById("name").value
+    const email = document.getElementById("email").value
+    const cargo = document.getElementById("cargo").value
+    const departamento = document.getElementById("departamento").value
+    const telefone = document.getElementById("phone").value
+    const senha = document.getElementById("pass").value
+    const confirmarsenha = document.getElementById("pass-confirm").value
+
+ 
+    
+    if(email === "" || email === null ||
+     name === "" || name=== null ||
+      cargo === "" || cargo=== null 
+      || departamento === "" 
+    || departamento=== null ||
+     telefone === "" || telefone=== null 
+     || senha === "" || senha === null
+     || confirmarsenha === "" || confirmarsenha === null 
+    ){
+        alert("Não pode haver campos vazios")
+    }
+
+    if(senha !== confirmarsenha){
+        alert("Senhas incompatíveis")
+
+    }
+
 }
