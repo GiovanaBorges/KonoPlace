@@ -53,7 +53,7 @@ a:hover{
 
 
 .form-control{
-    background-color: var(--gray-30);
+    background-color: var(--gray-50);
     border:0;
     transition: 0.5s;
     opacity: 0.8;
@@ -62,13 +62,13 @@ a:hover{
 }
 
 .form-control:hover{
-    background-color: var(--gray-30);
+    background-color: var(--gray-50);
     border:0;
     opacity: 1;
 }
 
 .form-control:focus{
-    background-color: var(--gray-30);
+    background-color: var(--gray-50);
     border:0;
     opacity: 1;
 
