@@ -178,3 +178,15 @@ a:hover{
 img:hover{
     cursor: pointer;
 }
+
+
+.image-upload > input
+    {
+    display: none;
+    }
+
+
+#uploadPreview{
+    border-radius:50%;
+    width:35%;
+}
