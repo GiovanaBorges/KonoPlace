@@ -38,11 +38,17 @@
         </div>
    
             <div class="d-flex align-items-center align-content-center mb-5">
-                    <div class="d-flex m-auto mt-4 mb-3" >
-                        <form class="m-auto p-2" style="width:50%;" onsubmit="validar()">
+                    <div class="d-flex m-auto mt-4 mb-3" style="width:30% ;" >
+                        <form class="m-auto p-1" style="width:100%;" onsubmit="validar()">
                           <div class="mb-3">
                             
-                            <img src="https://first-tech.com/wp-content/uploads/img-HSM-para-protecao-de-chaves-criptograficas.png"  class="rounded mx-auto d-block" alt="sua foto" style="max-width:50%;">
+                            <div class="image-upload d-flex align-items-center justify-content-center" >
+                              <label for="uploadImage">
+                                  <img src="./assets/icons8-adicionar-imagem-96.png" id="uploadPreview" style="width: 110px; height: 110px;">
+                              </label>  
+                              <input id="uploadImage" type="file" name="foto" onchange="PreviewImage();">
+                          </div>
+
                           </div>
                               <div class="mb-3">
                                 <input id="name" type="text" class="form-control"  placeholder="Nome completo">
@@ -54,7 +60,7 @@
                                 <input id="departamento" type="name" class="form-control"  placeholder="Departamento">
                               </div>
                               <div class="mb-3">
-                                <input id="phone" type="number" class="form-control"  placeholder="Telefone">
+                                <input id="phone" type="text" class="form-control"  placeholder="Telefone">
                               </div>
                               <div class="mb-3">
                                 <input id="email" type="email" class="form-control"  placeholder="email">
