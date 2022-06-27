@@ -59,3 +59,14 @@ function PreviewImage(){
         document.getElementById("uploadPreview").src = oFREvent.target.result;
     };
 }
+
+
+function Date() {
+    let data = document.getElementById ("date_reservation").value;
+    let dividir = data.split("-");
+    let ano = dividir[0];
+    let mes = dividir[1];
+    let dia = dividir[2];
+    alert(`dia : ${dia} ,mes : ${mes} ,ano : ${ano}`);
+    
+}
