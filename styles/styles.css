@@ -15,7 +15,7 @@
     --gray-50:#DCD8D8; /*#262626*/;
     --gray-30:#302C2C;
     --orange:#F97A2D;
-    --red:#FF5A58;
+    --red:red;
     --blue:#00A4D9;
     --green:#05FF00;
 }
@@ -147,7 +147,7 @@ a:hover{
 }
 
 .place_kono{
-    background-color: var(--orange);
+    background-color: var(--red);
 }
 
 .table-side{
@@ -189,4 +189,16 @@ img:hover{
 #uploadPreview{
     border-radius:50%;
     width:35%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: pink;
+  }
+
+  .icon{
+    
+    }
+
+
 }
