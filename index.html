@@ -16,101 +16,143 @@
 </head>
 
 <body>
-  <nav class="navbar" style="background:var(--dark-100)">
-    <div class="container-fluid align-content-center">
-      <a class="navbar-brand " href="#"><img src="./assets/text-logo-test.png" alt="" style="width:150px"></a>
-      <div class="d-flex" role="search">
-        <span class="navbar-text ">
-          <img id="element"   src="https://img.icons8.com/ios-glyphs/30/white/moon-symbol.png"class= "icon mx-3" alt="logout" />
-    </div>
 
-    </div>
-
-  </nav>
-
-
-  <div class="container-fluid align-items-center " style="background-color: var(--bg);">
-            <div class="row align-items-center" style="height:100vh;">
-                    <div class="col-6 p-0" >
-                        
-                        <img src="./assets/woman.png" alt="" style="max-height:100vh;min-width: 50vw;">
-                    </div>
-                  
-                    <div class="col ">
-                        <form class="m-5" onsubmit="validarcadastro()">
-                            <h1 class="mb-3">Cadastro</h1>
-                            <div class="mb-3">
-                              <input id="name" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Nome Completo">
-                            </div>
-                            <div class="mb-3">
-                                <input id="cargo" type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Cargo">
-                              </div>
-                            <div class="mb-3">
-                              <input id="departamento" type="text" class="form-control"  placeholder="Departamento">
-                            </div>
-                            <div class="mb-3">
-                                <input id="phone" type="text" class="form-control" placeholder="Telefone">
-                              </div>
-                              <div class="mb-3">
-                                <input id="email" type="email" class="form-control" placeholder="Email">
-                              </div>
-                              <div class="mb-3">
-                                <input id="pass" type="password" class="form-control" placeholder="Senha">
-                              </div>
-                              <div class="mb-3">
-                                <input id="pass-confirm" type="password" class="form-control" placeholder="Confirmar Senha">
-                              </div>
-                              
-                              <div class="mb-3 d-flex justify-content-end" >
-                                <a href="./login.html" >Já Tenho conta</a>
-                                
-                              </div>
-                            <button type="submit" class="btn btn-primary">Cadastrar</button>
-                            
-                          </form>
-                          
-                    </div>
-                
-             
-            </div>
-            
-      </div>
+  <header>
+    <div class="container-fluid" style="background:var(--dark-100)">
+ 
+        <nav class="navbar" >
+          <div class="container-fluid align-content-center">
+            <a class="navbar-brand " href="#"><img src="./assets/text-logo-test.png" alt="" style="width:150px"></a>
+            <div class="d-flex" role="search">
+              <span class="navbar-text ">
+                <img id="element"   src="https://img.icons8.com/ios-glyphs/30/white/moon-symbol.png"class= "icon mx-3" alt="logout" />
+          </div>
       
-
-
+          </div>
+      
+        </nav>
+     
     </div>
 
-  </div>
-  <footer class="navbar navbar-expand-lg text-white" style="background-color:var(--dark-100)">
+   
+  </header>
+  
+
+  <main>
     <div class="container-fluid">
       
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-        <div>
-          <img width="150" height="60" src="./assets/cropped-img-logo-FT.png" class="attachment-full size-full" alt="" sizes="(max-width: 350px) 100vw, 350px">
-        </div>
-        <ul class="d-flex align-items-center justify-content-center p-1" >
-          
-          <li class="d-flex align-items-center justify-content-center p-2">
+        <div class="row align-items-center" style="background-color: var(--bg);">
+          <div class="col-md-6 col-sm-5 col-xl-6 col-xxl-6 m-0 p-0" >
+            
+              <img src="./assets/woman.png" alt="" class="img-fluid">
+            
+              
+          </div>
+        
+          <div class="col-md-6 col-sm-7 col-xl-6 col-xxl-6">
 
+            <div class="container-fluid">
+              <form class="m-5" onsubmit="validarcadastro()">
+                <h1 class="mb-3">Cadastro</h1>
+                <div class="mb-3">
+                  <input id="name" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Nome Completo">
+                </div>
+                <div class="mb-3">
+                    <input id="cargo" type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Cargo">
+                  </div>
+                <div class="mb-3">
+                  <input id="departamento" type="text" class="form-control"  placeholder="Departamento">
+                </div>
+                <div class="mb-3">
+                    <input id="phone" type="text" class="form-control" placeholder="Telefone">
+                  </div>
+                  <div class="mb-3">
+                    <input id="email" type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="mb-3">
+                    <input id="pass" type="password" class="form-control" placeholder="Senha">
+                  </div>
+                  <div class="mb-3">
+                    <input id="pass-confirm" type="password" class="form-control" placeholder="Confirmar Senha">
+                  </div>
+                  
+                  <div class="mb-3 d-flex justify-content-end" >
+                    <a href="./login.html" >Já Tenho conta</a>
+                    
+                  </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                
+              </form>
+            </div>
+              
+                
+          </div>
+      
+   
+  </div>
+      
+     
+        
+  </div>
+    
+   
+  </main>
+  
+      
+  <div class="container-fluid" style="background:var(--dark-100)">
+  <footer class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm text-white">
+    
+      
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-8 col-xl-6">
+                <img width="150" height="60" src="./assets/cropped-img-logo-FT.png" class="attachment-full size-full" alt="" >
+              </div>
+
+              <div class="col-md-6 col-sm-4 col-xl-6 col-xxl-6">
+              
+                <div class="row align-items-center">
+                  <div class="col-md-4 col-sm-4">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="">KonoPlace + First tech</a>
+                    </li>
+                  </div>
+                  <div class="col-md-2 col-sm-2">
+                    <li class="nav-item">
+                      <a href="https://www.instagram.com/firsttechbr/" target=_blank class="nav-link text-white mx-3" href="#"><img src="https://img.icons8.com/fluency/30/undefined/instagram-new.png"/></a>
+                    </li>
+                  </div>
+                  <div class="col-md-2 col-sm-2">
+                    <li class="nav-item">
+                      <a href="https://www.linkedin.com/company/first-tech/mycompany/" target=_blank class="nav-link text-white mx-3"><img src="https://img.icons8.com/color/30/undefined/linkedin.png"/></a>
+                    </li>
+                  </div>
+               
+                
+              </div>
+              </div>
+                
+                  
+
+              </ul>
+              </div>
+                
+              
+            </div>
+          </div>
           
-          <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#">KonoPlace + First tech</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://www.instagram.com/firsttechbr/" target=_blank class="nav-link text-white mx-3" href="#"><img src="https://img.icons8.com/fluency/30/undefined/instagram-new.png"/></a>
-            </li>
-            <li class="nav-item">
-              <a href="https://www.linkedin.com/company/first-tech/mycompany/" target=_blank class="nav-link text-white mx-3"><img src="https://img.icons8.com/color/30/undefined/linkedin.png"/></a>
-            </li>
-          </li>           
-          </li>  
-          </ul>
-      </div>
-    </div>
+          
+        </div>
+     
+    
 </footer>
+  
+</div>
 
   <!-- JavaScript Bundle with Popper -->
 <script src="./js/trocarcordefundo.js"></script>

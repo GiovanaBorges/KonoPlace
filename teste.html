@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg" style="background:var(--dark-100)">
         <div class="container-fluid">
             <a class="navbar-brand " href="#"><img src="./assets/text-logo-test.png" alt="" style="width:150px"></a>
@@ -52,26 +53,49 @@
                     <button type="submit" class="btn btn-danger mb-3 mt-3">VERIFICAR</button>
                 </form>
                 
-            </div>
-            <div class="d-flex flex-column align-items-center justify-content-center mx-3 p-1">
-                <div class="d-flex justify-content-start" style="width:100%;">
-                    <div class="place place_empty mx-1"></div>
-                    <h6 class="">Livre</h6>
+
+   
+    
+<main>
+   
+        <div class="container-fluid" >
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-4 col-sm-8 col-xl-8">
+                    
+                    <form action="" onsubmit="Date()">
+                        <h6 class="">Escolha a data de sua reserva:</h6>
+                        <input type="date" class="form-control" id="date_reservation" name="fdate_reservation">
+                        <button type="submit" class="btn btn-danger mb-3 mt-3">Verificar disponibilidade</button>
+                    </form>
                 </div>
-                <div class="d-flex justify-content-start mt-3" style="width:100%;">
-                    <div class="place place_kono mx-1"></div>
-                    <h6 class="">Ocupado</h6>
+    
+                <div class="col-md-5  col-sm-8 col-xl-8" >
+                    
+                    <div class="d-flex justify-content-start m-1" >
+                        <div class="place place_empty"></div>
+                        <h6 class="">Livre</h6>
+                    </div>
+                    <div class="d-flex justify-content-start m-1" >
+                        <div class="place place_kono"></div>
+                        <h6 class="">Ocupado</h6>
+                    </div>
                 </div>
             </div>
         </div>
+       
+        
+    
 
-        <div class="d-flex flex-column justify-content-between align-items-center mb-2 mt-3 mx-auto"
-            style="border:solid  1px;min-height:60vh;max-width: 70%;">
+
+
+        <div class="container-fluid" style="border:solid  1px;">
+
+            <div class="d-flex flex-column justify-content-between align-items-center mb-2 mt-3">
             
-
+    
             
             <div class="d-flex justify-content-between" style="width:100%;">
-
+    
                 <div class="d-flex" style="width:100%;">
                     
                     <div class="d-flex flex-column justify-content-evenly align-items-center"
@@ -98,11 +122,11 @@
                             </div>
                         </div>
                     </div>
-
+    
                     <div class="d-flex justify-content-around" style="width:100%;">
                         <div class="d-flex flex-column ">
-
-
+    
+    
                             <div class="d-flex">
                                 <div class="d-flex flex-column justify-content-center  p-1 my-2 mx-2 align-items-center"
                                     style="width: auto;">
@@ -135,9 +159,9 @@
                                     </div>
                                 </div>
                             </div>
-
+    
                             <div class="d-flex">
-
+    
                                 <div class="d-flex flex-column justify-content-center  p-1 my-2 mx-2 align-items-center"
                                     style="width: auto;">
                                     <div class="place place_empty" id="t11" data-bs-toggle="modal" data-bs-target="#modalReserva">
@@ -171,7 +195,7 @@
                             </div>
                             <h6 class="text-center  mt-1">Escritório</h6>
                             <div class="d-flex justify-content-end">
-
+    
                                 <div class="d-flex flex-column justify-content-center  p-1 my-2 mx-2 align-items-center"
                                     style="width: auto;">
                                     <div class="place place_empty" id="t17" data-bs-toggle="modal" data-bs-target="#modalReserva">
@@ -192,75 +216,75 @@
                                         <h3>a</h3>
                                     </div>
                                 </div>
-
+    
                             </div>
-
-
-
+    
+    
+    
                         </div>
-
-
+    
+    
                     </div>
                 </div>
-
+    
                 <div class="d-flex flex-column justify-content-between align-items-end " style="height:70vh;">
-
+    
                     <div class="d-flex flex-column align-items-center justify-content-between p-5"
                         style="border:solid blue 3px;max-height:100%;width:auto;">
                         <div class="d-flex">
                             <hr class="table-side " />
                             <div class="place place_empty" id="t21" data-bs-toggle="modal" data-bs-target="#modalReserva"></div>
                         </div>
-
-
+    
+    
                         <div class="d-flex mt-5">
                             <hr class="table-side" />
                             <div class="place place_empty" id="t22" data-bs-toggle="modal" data-bs-target="#modalReserva"></div>
                         </div>
                     </div>
-
+    
                     <div class="d-flex flex-column p-5" style="width:100%;height:auto;">
                         <div class="d-flex ">
                             <hr class="table-side" />
                             <div class="place place_empty" id="t23" data-bs-toggle="modal" data-bs-target="#modalReserva"></div>
                         </div>
-
+    
                         <div class="d-flex mt-5">
                             <hr class="table-side" />
                             <div class="place place_empty" id="t24" data-bs-toggle="modal" data-bs-target="#modalReserva"></div>
                         </div>
                     </div>
                 </div>
-
-
-
-
+    
+    
+    
+    
             </div>
             <div class="d-flex flex-column" style="width:100%;">
-
+    
                 <div class="d-flex justify-content-between align-content-between align-items-end">
                     <div class="d-flex flex-column justify-content-center align-items-end"
                         style="border:solid 2px;min-height:20vh;width:50%;">
                         <h5 class=" mx-1">Sala Tesla</h5>
                     </div>
-
-
+    
+    
                     <div class="d-flex flex-column">
-
+    
                         <div class="d-flex justify-content-center p-1 my-2 mx-2 align-items-center"
                             style="width: auto;">
                             <div class="d-flex flex-column align-items-center mx-1">
                                
                             </div>
-
+    
                             <div class="d-flex flex-column align-items-center mx-1">
                                 
                                 
                                 
                             </div>
-
+    
                         </div>
-
+    
                         <div class="d-flex justify-content-center p-1 my-2 mx-2 align-items-center"
                             style="width: auto;">
                             <div class="d-flex flex-column align-items-center">
@@ -272,17 +296,17 @@
                                     <h3>a</h3>
                                 </div>
                             </div>
-
+    
                             <div class="d-flex flex-column align-items-center ">
                                 
                             </div>
-
+    
                         </div>
                     </div>
-
-
-
-
+    
+    
+    
+    
                     <div class="d-flex p-5 flex-column justify-content-center align-items-center "
                         style="border:solid #FF7B01 3px;min-height:20vh;width:20%;">
                         <div class="d-flex justify-content-around p-3">
@@ -293,6 +317,13 @@
                 </div>
             </div>
         </div>
+        </div>
+        
+    
+   
+</main>
+    
+      
 
        
         
@@ -357,7 +388,7 @@
       </div>
     </div>
 </footer>
-    </div>
+    
 
     
 
