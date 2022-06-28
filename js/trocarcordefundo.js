@@ -20,6 +20,8 @@ function sun(){
 
    // https://img.icons8.com/ios-glyphs/30/000000/moon-symbol.png lua
    // https://img.icons8.com/material-outlined/24/FFFFFF/sun--v1.png sol
+   localStorage.setItem("variavel","claro");
+
 
 }
 
@@ -31,9 +33,25 @@ function moon(){
 
     el.src = "https://img.icons8.com/material-outlined/24/FFFFFF/sun--v1.png"
    
-  
+    localStorage.setItem("variavel","escuro");
+
+
 }
 
+(function themeStorage(){
 
+    if(localStorage.getItem("variavel") == "escuro"){
+    
+        moon()
+    
+    }else{
+    
+       sun()
+    
+       
+    
+    }
+    
+    })()
 
 
