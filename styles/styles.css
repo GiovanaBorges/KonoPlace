@@ -163,7 +163,7 @@ a:hover{
     height: 7.15px;
 }
 .table-side{
-    background-color: #D9D9D9;  
+    background-color:var(--text);  
     transform: rotate(89.64deg);
 
     width: 65.84px;
