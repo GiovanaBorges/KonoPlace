@@ -40,51 +40,59 @@
     </div>
   </nav>
 
-  <div class="container-fluid align-items-center" style="height:100vh;background-color: var(--bg-dark);">
-    <div class="d-grid gap-2 d-md-flex justify-content-center">
-      <a href="perfil.html" class="link me-md-2 p-3 mt-3" style="border-bottom: 2px solid var(--red);">Perfil</a>
-      <a href="reserve.html" class="link me-md-2 p-3 mt-3">Reservas</a>
-    </div>
+      <div class="container-fluid align-items-center" style="height:100vh;background-color: var(--bg-dark);">
+        <div class="d-grid gap-2 d-md-flex justify-content-center">
+          <a href="perfil.html" class="link me-md-2 p-3 mt-3" style="border-bottom: 2px solid var(--red);">Perfil</a>
+          <a href="reserve.html" class="link me-md-2 p-3 mt-3" >Reservas</a>
+        </div>
+   
+            <div class="d-flex align-items-center align-content-center mb-5">
+                    <div class="d-flex m-auto mt-4 mb-3">
+                        <form class="m-auto p-1" style="width:100%;" onsubmit="validar()">
+                          <div class="mb-3">
+                            
+                            <div class="image-upload d-flex align-items-center justify-content-center" >
+                              <label for="uploadImage">
+                                  <img src="./assets/icons8-adicionar-imagem-96.png" id="uploadPreview" style="width: 110px; height: 110px;">
+                              </label>  
+                              <input id="uploadImage" type="file" name="foto" onchange="PreviewImage();">
+                          </div>
 
-    <div class="d-flex align-items-center align-content-center mb-5">
-      <div class="d-flex m-auto mt-4 mb-3" style="width:30% ;">
-        <form class="m-auto p-1" style="width:100%;" onsubmit="validar()">
-          <div class="mb-3">
+                          </div>
+                              <div class="mb-3">
+                                <input id="name" type="text" class="form-control"  placeholder="Nome completo">
+                              </div>
+                              <div class="mb-3">
+                                <input id="job" type="name" class="form-control"  placeholder="Cargo">
+                              </div>
+                              <div class="mb-3">
+                                <input id="departamento" type="name" class="form-control"  placeholder="Departamento">
+                              </div>
+                              <div class="mb-3">
+                                <input id="phone" type="text" class="form-control"  placeholder="Telefone">
+                              </div>
+                              <div class="mb-3">
+                                <input id="email" type="email" class="form-control"  placeholder="email">
+                              </div>
+                              <div class="mb-3">
+                                <input id="pass" type="password" class="form-control"  placeholder="Senha">
+                              </div>
+                              <div class="d-flex flex-column ">
+                                <button type="submit"  class="btn btn-green mt-3">Salvar alterações</button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#modalPerfil" class="btn btn-danger mb-3 mt-3" data-bs-toggle="modal" data-bs-target="#modalPerfil">Excluir conta</button>
+                              </div>
+                            
+                          </form>
+                    </div>
+                </div>
 
-            <div class="image-upload d-flex align-items-center justify-content-center">
-              <label for="uploadImage">
-                <img src="./assets/icons8-adicionar-imagem-96.png" id="uploadPreview"
-                  style="width: 110px; height: 110px;">
-              </label>
-              <input id="uploadImage" type="file" name="foto" onchange="PreviewImage();">
-            </div>
-
-          </div>
-          <div class="mb-3">
-            <input id="name" type="text" class="form-control" placeholder="Nome completo">
-          </div>
-          <div class="mb-3">
-            <input id="job" type="name" class="form-control" placeholder="Cargo">
-          </div>
-          <div class="mb-3">
-            <input id="departamento" type="name" class="form-control" placeholder="Departamento">
-          </div>
-          <div class="mb-3">
-            <input id="phone" type="text" class="form-control" placeholder="Telefone">
-          </div>
-          <div class="mb-3">
-            <input id="email" type="email" class="form-control" placeholder="email">
-          </div>
-          <div class="mb-3">
-            <input id="pass" type="password" class="form-control" placeholder="Senha">
-          </div>
-          <div class="d-flex flex-column ">
-            <button type="submit" class="btn btn-green mt-3">Salvar alterações</button>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#modalPerfil" class="btn btn-danger mb-3 mt-3"
-              data-bs-toggle="modal" data-bs-target="#modalPerfil">Excluir conta</button>
-          </div>
-
-        </form>
+                <div class="row">
+                  <div class="col-xl-6 col-md-6 col-12"></div>
+                  <div class="col-xl-6 col-md-12"></div>
+                </div>
+      </div>
+            
+            
       </div>
     </div>
   </div>

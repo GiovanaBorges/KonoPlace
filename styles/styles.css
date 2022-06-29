@@ -7,18 +7,20 @@
   font-family: "Montserrat", sans-serif;
 }
 
-:root {
-  --bg: white /*#FFFFFF*/;
-  --text: black;
-  --dark-100: #dcd8d8;
 
-  --gray-50: #dcd8d8; /*#262626*/
-  --gray-30: #302c2c;
-  --orange: #f97a2d;
-  --red: #ff5a58;
-  --blue: #00a4d9;
-  --green: #05ff00;
+:root{
+    --bg:white /*#FFFFFF*/;
+    --text:black;
+    --dark-100:#DCD8D8;
+    
+    --gray-50:#DCD8D8; /*#262626*/;
+    --gray-30:#302C2C;
+    --orange:#F97A2D;
+    --red:red;
+    --blue:#00A4D9;
+    --green:#05FF00;
 }
+
 
 .text-white {
   color: #f97a2d;
@@ -140,9 +142,10 @@ a:hover {
   background-color: var(--green);
 }
 
-.place_kono {
-  background-color: var(--orange);
-}
+
+.place_kono{
+    background-color: var(--red);
+
 
 .table-side {
   background-color: var(--text);
@@ -181,7 +184,25 @@ img:hover {
   width: 35%;
 }
 
+#uploadPreview{
+    border-radius:50%;
+    width:35%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: pink;
+  }
+
+  .icon{
+    
+    }
+
+
+}
+=======
 .figure-img {
   max-width: 50vw;
   max-height: 80vh;
 }
+
