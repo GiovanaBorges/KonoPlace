@@ -67,6 +67,5 @@ function date() {
     let ano = dividir[0];
     let mes = dividir[1];
     let dia = dividir[2];
-    alert(`dia : ${dia} ,mes : ${mes} ,ano : ${ano}`);
     
 }
