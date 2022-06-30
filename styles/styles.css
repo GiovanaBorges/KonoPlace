@@ -145,12 +145,8 @@ a:hover {
 
 .place_kono{
     background-color: var(--red);
-
-
-.table-side {
-  background-color: var(--text);
-  padding: 0.3rem;
 }
+
 
 .table-right {
   background-color: var(--text);
@@ -189,20 +185,24 @@ img:hover {
     width:35%;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: pink;
-  }
 
-  .icon{
-    
-    }
-
-
+  .icon{}
 }
-=======
+
 .figure-img {
   max-width: 50vw;
   max-height: 80vh;
+}
+
+footer{
+  background: var(--dark-100);
+}
+.social-links{
+  text-align: center;
+}
+
+.social-links a{
+  display: inline-block;
+  margin: 1rem;
 }
 
