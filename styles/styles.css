@@ -194,8 +194,11 @@ img:hover {
 }
 
 
-  .icon{}
+.logo-icon{
+  height:auto;
+  width:10rem;
 }
+
 
 .figure-img {
   max-width: 50vw;
