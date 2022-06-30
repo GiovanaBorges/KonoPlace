@@ -61,7 +61,7 @@ function PreviewImage(){
 }
 
 
-function Date() {
+function date() {
     let data = document.getElementById ("date_reservation").value;
     let dividir = data.split("-");
     let ano = dividir[0];

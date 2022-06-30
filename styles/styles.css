@@ -35,6 +35,10 @@ li {
   list-style-type: none;
 }
 
+.navbar{
+  background-color:var(--dark-100)
+}
+
 a {
   text-decoration: none;
   color: var(--text);
@@ -130,8 +134,12 @@ a:hover {
 }
 
 .place {
-  width: 30px;
+  width:auto;
   border-radius: 50%;
+  text-align: center;
+
+  padding:0.75rem;
+  display: inline-block;
 }
 
 .place:hover {
