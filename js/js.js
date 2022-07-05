@@ -73,6 +73,7 @@ function date() {
   let mes = dividir[1];
   let dia = dividir[2];
   alert(`dia : ${dia} ,mes : ${mes} ,ano : ${ano}`);
+
 }
 
 const getMesa = (name) => {
