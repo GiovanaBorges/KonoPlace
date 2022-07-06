@@ -10,23 +10,36 @@ A quantidade de mesas nos escritórios é desigual a quantidade de funcionários
 
 Rotas para o Usuário
 GET "user/login" Usuário logar na conta
+
 POST "user/" Cadastro de usuário
+
 DELETE "user/id_user" Deletar usuário
+
 PUT "user/id_user" Editar usuário
 
 Rotas para Reserva
 GET "/reserva" Verificar todas as reservas
+
 GET "/reserva:data" Verificar todas as reservas por data
+
 POST "/reserva" Registrar reservar na tabela de reservas
+
 PUT "/reserva:id_reserva" Editar informação reserva
+
 DELETE "/reserva:id_reserva" Deletar reserva
 
 Rotas para Mesa
-GET "/place" Verificar todas as mesas Registradas no banco
-GET "/place:id_place" Verificar mesa por ID
-POST "/place" Registrar mesa
+GET "/mesa" Verificar todas as mesas Registradas no banco
+
+GET "/mesa/name/:name_mesa" Verificar mesa por nome
+
+GET "/mesa/:id_mesa" Verificar mesa por ID
+
+POST "/mesa" Registrar mesa
+
 PUT "/place:id_place" Editar informação sobre mesa
-DELETE
+
+DELETE" /place:id_place" Deletar informação sobre mesa
 
 ### Modelagem banco:
 
