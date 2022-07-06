@@ -40,7 +40,7 @@ li {
 }
 
 main{
-  min-height:70vh;
+  min-height:90vh;
 }
 
 a {
@@ -146,6 +146,11 @@ a:hover {
   display: inline-block;
 }
 
+.place_gray{
+
+  background-color: var(--gray-50);
+}
+
 .place:hover {
   cursor: pointer;
 }
@@ -220,4 +225,5 @@ footer{
   display: inline-block;
   margin: 1rem;
 }
+
 
