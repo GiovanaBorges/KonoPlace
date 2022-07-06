@@ -57,6 +57,7 @@ idMesa
 
 ### Telas disponíveis :
 link do protótipo no figma
+https://www.figma.com/file/QqthVkxqgY3IbtQL2atunb/Prototype-Kono?node-id=0%3A1
 
 
 ### Paleta de cores ? , fontes , protótipo
