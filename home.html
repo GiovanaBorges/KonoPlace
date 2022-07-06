@@ -49,10 +49,9 @@
     </nav>
 
 
-
                 <main>
 
-                    <div class="container-fluid " >
+                    <div class="container-fluid" >
                         <div class=" container">
                             <div class="row p-3 m-1" >
                                 <div class="col-md-6 col-sm-6 col-xl-6 align-self-center p-1">
@@ -99,29 +98,29 @@
                                 <div class="d-flex container">
 
                                     <div class="container d-flex p-1 flex-column justify-content-evenly align-items-center"
-                                        style="border:solid  2px;">
+                                        style="border:solid 2px;">
                                         <div class="d-flex container flex-column justify-content-center p-1 align-items-center"
                                             >
-                                            <div class="place place_empty" id="t01" data-bs-toggle="modal"
-                                                data-bs-target="#modalReserva" value="01" onclick="">
+                                            <div class="place place_empty" id="K1" data-bs-toggle="modal"
+                                                data-bs-target="#modalReserva" onclick="handleMesa(K1)">
                                                 <h5>K01</h5>
                                             </div>
                                             <hr class="table-right" />
-                                            <div class="place place_empty" id="t02" data-bs-toggle="modal"
-                                                data-bs-target="#modalReserva">
+                                            <div class="place place_empty" id="K2" data-bs-toggle="modal"
+                                                data-bs-target="#modalReserva" onclick="handleMesa(K2)">
                                                 <h5>K02</h5>
                                             </div>
                                         </div>
                                         <h6 class="mt-1">Sala de Descompressão</h6>
                                         <div class="d-flex container flex-column justify-content-center p-1 align-items-center"
                                            >
-                                            <div class="place place_empty" id="t03" data-bs-toggle="modal"
-                                                data-bs-target="#modalReserva">
+                                            <div class="place place_empty" id="K3" data-bs-toggle="modal"
+                                                data-bs-target="#modalReserva" onclick="handleMesa(K3)">
                                                 <h5>K03</h5>
                                             </div>
                                             <hr class="table-right" />
-                                            <div class="place place_empty" id="t04" data-bs-toggle="modal"
-                                                data-bs-target="#modalReserva">
+                                            <div class="place place_empty" id="K4" data-bs-toggle="modal"
+                                                data-bs-target="#modalReserva" onclick="handleMesa(K4)">
                                                 <h5>K04</h5>
                                             </div>
                                         </div>
@@ -316,7 +315,7 @@
                                                     <h5>K25</h5>
                                                 </div>
                                                 <hr class="table-right" />
-                                                <div class="place place_empty" id="t30" data-bs-toggle="modal"
+                                                <div class="place place_empty" id="t30" data-bs-toggle="modal" onclick="handleMesa()"
                                                     data-bs-target="#modalReserva">
                                                     <h5>K26</h5>
                                                 </div>
@@ -363,7 +362,7 @@
                             <div class="modal-header">
                                 <h5 class="modal-title" id="modalInfo"> Deseja reservar mesa? </h5>
                                 <button id="btnCloseIcon" type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close" onclick="cleanModal()"></button>
+                                    aria-label="Close" ></button>
                             </div>
                             <h6 id="place_data">
 
@@ -374,7 +373,7 @@
                             <div class="modal-footer d-flex justify-content-center">
                                 <button type="submit" class="btn btn-outline-success" style="width:50%;">Salvar</button>
                                 <button type="button" id="btnClose" class="btn btn-outline-danger" data-bs-dismiss="modal"
-                                    onclick="cleanModal()" style="width:40%;">Fechar</button>
+                                    style="width:40%;">Fechar</button>
                             </div>
 
 
@@ -386,8 +385,8 @@
                 </div>
 
 
-                <footer class="container-fluid text-white" style="background:var(--dark-100)">
-                    <div class="container"> 
+                <footer class="container-fluid text-white container-sm" style="background:var(--dark-100)">
+                    <div class="container "> 
                                 <div class="row align-items-center  justify-content-center">
                                     <div class="col-sm-4 col-md-6">
                                         <img src="./assets/cropped-img-logo-FT.png"
